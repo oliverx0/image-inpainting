@@ -1,0 +1,6 @@
+- Data Loader to generate training data by randomly creating masks and applying it to image
+
+- Partial Convolutional Layer implementation
+
+- Loss function implementation
+
