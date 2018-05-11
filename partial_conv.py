@@ -4,6 +4,9 @@ import torch.nn.functional as F
 
 class PartialConv(nn.Module):
   def __init__(self, in_channels, out_channels, kernel_size, stride):
+
+    super(PartialConv, self).__init__()
+    
     self.conv = nn.Conv2d(in_channels, out_channels, kernel_size, stride)
     
     # The mask layer will aways have 1 channel.

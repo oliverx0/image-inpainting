@@ -22,7 +22,7 @@ class GenerateMask(object):
     min_ratio, max_ratio = mask_ratio
     random_ratio = random.uniform(min_ratio, max_ratio)
 
-    return (np.random.rand(width * height) > random_ratio).astype(int).reshape((1, width,height))
+    return (np.random.rand(width * height) > random_ratio).astype("float32").reshape((1, width,height))
 
 
   def __call__(self, image):
